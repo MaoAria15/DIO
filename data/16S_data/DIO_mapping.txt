@@ -1,0 +1,199 @@
+SampleID	Barcode_ID	ProjectID	Remove	Sample_time_point	Mouse_ID	Vendor	Diet	Treatment	Sex	Liver_response
+NXT075Mao65	9	SafeVir_f3_1	x	1w_after_FVT	1	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao66	21	SafeVir_f3_2	x	1w_after_FVT	2	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao67	33	SafeVir_f3_3	x	1w_after_FVT	3	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao68	45	SafeVir_f3_4	x	1w_after_FVT	4	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao69	57	SafeVir_f3_5	x	1w_after_FVT	5	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao70	69	SafeVir_f3_6	x	1w_after_FVT	6	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao71	81	SafeVir_f3_7	x	1w_after_FVT	7	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao72	93	SafeVir_f3_8	x	1w_after_FVT	8	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao73	10	SafeVir_f3_9	x	1w_after_FVT	9	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao74	22	SafeVir_f3_10	x	1w_after_FVT	10	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao75	34	SafeVir_f3_11	x	1w_after_FVT	11	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao76	46	SafeVir_f3_12	x	1w_after_FVT	12	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao77	58	SafeVir_f3_13	x	1w_after_FVT	13	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao78	70	SafeVir_f3_14	x	1w_after_FVT	14	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao79	82	SafeVir_f3_15	x	1w_after_FVT	15	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao80	94	SafeVir_f3_16	x	1w_after_FVT	16	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao81	11	SafeVir_f3_17	x	1w_after_FVT	17	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao82	23	SafeVir_f3_18	x	1w_after_FVT	18	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao83	35	SafeVir_f3_19	x	1w_after_FVT	19	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao84	47	SafeVir_f3_21	x	1w_after_FVT	21	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao85	59	SafeVir_f3_22	x	1w_after_FVT	22	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao86	71	SafeVir_f3_23	x	1w_after_FVT	23	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao87	83	SafeVir_f3_24	x	1w_after_FVT	24	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao88	95	SafeVir_f3_25	x	1w_after_FVT	25	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao89	12	SafeVir_f3_26	x	1w_after_FVT	26	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao90	24	SafeVir_f3_27	x	1w_after_FVT	27	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao91	36	SafeVir_f3_28	x	1w_after_FVT	28	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao92	48	SafeVir_f3_29	x	1w_after_FVT	29	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao93	60	SafeVir_f3_31	x	1w_after_FVT	31	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao94	72	SafeVir_f3_32	x	1w_after_FVT	32	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao97	217	SafeVir_f3_34	x	1w_after_FVT	34	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao98	229	SafeVir_f3_36	x	1w_after_FVT	36	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao99	241	SafeVir_f3_37	x	1w_after_FVT	37	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao100	253	SafeVir_f3_38	x	1w_after_FVT	38	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao101	265	SafeVir_f3_39	x	1w_after_FVT	39	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao102	277	SafeVir_f3_41	x	1w_after_FVT	41	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao103	194	SafeVir_f3_42	x	1w_after_FVT	42	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao104	206	SafeVir_f3_43	x	1w_after_FVT	43	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao105	218	SafeVir_f3_44	x	1w_after_FVT	44	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao106	230	SafeVir_f3_45	x	1w_after_FVT	45	Taconic	HFD	Obese_control	Male	Response
+NXT075Mao107	242	SafeVir_f3_46	x	1w_after_FVT	46	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao108	254	SafeVir_f3_48	x	1w_after_FVT	48	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao193	145	SafeVir_f0_1	x	Arrival	1	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao194	157	SafeVir_f0_2	x	Arrival	2	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao195	169	SafeVir_f0_3	x	Arrival	3	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao196	181	SafeVir_f0_4	x	Arrival	4	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao199	98	SafeVir_f0_5	x	Arrival	5	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao200	110	SafeVir_f0_6	x	Arrival	6	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao201	122	SafeVir_f0_7	x	Arrival	7	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao202	134	SafeVir_f0_8	x	Arrival	8	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao203	146	SafeVir_f0_9	x	Arrival	9	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao204	158	SafeVir_f0_10	x	Arrival	10	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao205	99	SafeVir_f0_13	x	Arrival	13	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao206	111	SafeVir_f0_14	x	Arrival	14	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao207	123	SafeVir_f0_15	x	Arrival	15	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao208	135	SafeVir_f0_16	x	Arrival	16	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao209	147	SafeVir_f0_17	x	Arrival	17	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao210	159	SafeVir_f0_18	x	Arrival	18	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao211	171	SafeVir_f0_19	x	Arrival	19	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao212	183	SafeVir_f0_20	x	Arrival	20	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao213	100	SafeVir_f0_21	x	Arrival	21	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao214	112	SafeVir_f0_22	x	Arrival	22	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao215	124	SafeVir_f0_23	x	Arrival	23	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao216	136	SafeVir_f0_24	x	Arrival	24	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao217	148	SafeVir_f0_25	x	Arrival	25	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao218	160	SafeVir_f0_26	x	Arrival	26	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao219	172	SafeVir_f0_27	x	Arrival	27	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao220	184	SafeVir_f0_28	x	Arrival	28	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao221	101	SafeVir_f0_29	x	Arrival	29	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao222	113	SafeVir_f0_30	x	Arrival	30	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao223	125	SafeVir_f0_31	x	Arrival	31	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao224	137	SafeVir_f0_32	x	Arrival	32	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao225	149	SafeVir_f0_33	x	Arrival	33	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao226	161	SafeVir_f0_34	x	Arrival	34	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao227	173	SafeVir_f0_35	x	Arrival	35	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao228	185	SafeVir_f0_36	x	Arrival	36	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao229	102	SafeVir_f0_37	x	Arrival	37	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao230	114	SafeVir_f0_38	x	Arrival	38	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao231	126	SafeVir_f0_39	x	Arrival	39	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao232	138	SafeVir_f0_40	x	Arrival	40	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao233	150	SafeVir_f0_41	x	Arrival	41	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao234	162	SafeVir_f0_42	x	Arrival	42	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao235	174	SafeVir_f0_43	x	Arrival	43	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao237	103	SafeVir_f0_45	x	Arrival	45	Taconic	HFD	Obese_control	Male	Response
+NXT075Mao238	115	SafeVir_f0_46	x	Arrival	46	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao264	142	SafeVir_f0_47	x	Arrival	47	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao265	154	SafeVir_f0_48	x	Arrival	48	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao109	266	SafeVir_f1_1	x	Before_1st_FVT	1	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao110	278	SafeVir_f1_2	x	Before_1st_FVT	2	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao111	195	SafeVir_f1_3	x	Before_1st_FVT	3	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao112	207	SafeVir_f1_4	x	Before_1st_FVT	4	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao113	219	SafeVir_f1_5	x	Before_1st_FVT	5	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao114	231	SafeVir_f1_6	x	Before_1st_FVT	6	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao115	243	SafeVir_f1_7	x	Before_1st_FVT	7	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao116	255	SafeVir_f1_8	x	Before_1st_FVT	8	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao117	267	SafeVir_f1_9	x	Before_1st_FVT	9	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao118	279	SafeVir_f1_10	x	Before_1st_FVT	10	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao119	196	SafeVir_f1_11	x	Before_1st_FVT	11	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao120	208	SafeVir_f1_12	x	Before_1st_FVT	12	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao121	220	SafeVir_f1_13	x	Before_1st_FVT	13	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao122	232	SafeVir_f1_14	x	Before_1st_FVT	14	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao123	244	SafeVir_f1_15	x	Before_1st_FVT	15	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao124	256	SafeVir_f1_16	x	Before_1st_FVT	16	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao125	268	SafeVir_f1_17	x	Before_1st_FVT	17	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao126	280	SafeVir_f1_18	x	Before_1st_FVT	18	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao127	197	SafeVir_f1_19	x	Before_1st_FVT	19	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao128	209	SafeVir_f1_20	x	Before_1st_FVT	20	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao129	221	SafeVir_f1_21	x	Before_1st_FVT	21	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao130	233	SafeVir_f1_22	x	Before_1st_FVT	22	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao131	245	SafeVir_f1_23	x	Before_1st_FVT	23	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao132	257	SafeVir_f1_24	x	Before_1st_FVT	24	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao133	269	SafeVir_f1_25	x	Before_1st_FVT	25	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao134	281	SafeVir_f1_26	x	Before_1st_FVT	26	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao135	198	SafeVir_f1_27	x	Before_1st_FVT	27	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao136	210	SafeVir_f1_28	x	Before_1st_FVT	28	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao137	222	SafeVir_f1_29	x	Before_1st_FVT	29	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao138	234	SafeVir_f1_30	x	Before_1st_FVT	30	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao139	246	SafeVir_f1_31	x	Before_1st_FVT	31	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao140	258	SafeVir_f1_32	x	Before_1st_FVT	32	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao141	270	SafeVir_f1_33	x	Before_1st_FVT	33	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao142	282	SafeVir_f1_34	x	Before_1st_FVT	34	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao145	223	SafeVir_f1_35	x	Before_1st_FVT	35	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao146	235	SafeVir_f1_36	x	Before_1st_FVT	36	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao147	247	SafeVir_f1_37	x	Before_1st_FVT	37	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao148	259	SafeVir_f1_38	x	Before_1st_FVT	38	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao149	271	SafeVir_f1_39	x	Before_1st_FVT	39	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao150	283	SafeVir_f1_40	x	Before_1st_FVT	40	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao151	200	SafeVir_f1_41	x	Before_1st_FVT	41	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao152	212	SafeVir_f1_42	x	Before_1st_FVT	42	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao153	224	SafeVir_f1_43	x	Before_1st_FVT	43	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao154	236	SafeVir_f1_44	x	Before_1st_FVT	44	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao155	248	SafeVir_f1_45	x	Before_1st_FVT	45	Taconic	HFD	Obese_control	Male	Response
+NXT075Mao156	260	SafeVir_f1_46	x	Before_1st_FVT	46	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao157	272	SafeVir_f1_47	x	Before_1st_FVT	47	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao158	284	SafeVir_f1_48	x	Before_1st_FVT	48	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao47	78	Neg_15_2	x	Controls	Controls	Controls	Controls	Negative	Controls	Controls
+NXT075Mao48	90	Pos_15_2	x	Controls	Controls	Controls	Controls	Positive	Controls	Controls
+NXT075Mao192	133	Neg_18_2	x	Controls	Controls	Controls	Controls	Negative	Controls	Controls
+NXT075Mao239	127	Neg_23_2	x	Controls	Controls	Controls	Controls	Negative	Controls	Controls
+NXT075Mao240	139	Pos_23_2	x	Controls	Controls	Controls	Controls	Positive	Controls	Controls
+NXT075Mao95	193	Neg_16_2	x	Controls	Controls	Controls	Controls	Negative	Controls	Controls
+NXT075Mao96	205	Pos_16_2	x	Controls	Controls	Controls	Controls	Positive	Controls	Controls
+NXT075Mao143	199	Neg_17_2	x	Controls	Controls	Controls	Controls	Negative	Controls	Controls
+NXT075Mao144	211	Pos_17_2	x	Controls	Controls	Controls	Controls	Positive	Controls	Controls
+NXT075Mao290	384	Neg_24_2	x	Controls	Controls	Controls	Controls	Negative	Controls	Controls
+NXT075Mao287	348	FVT_ChP_donor	x	Donors	FVT_ChP_donor	FVT_ChP_donor	FVT_ChP_donor	FVT_ChP_donor	FVT_ChP_donor	FVT_ChP_donor
+NXT075Mao289	372	FVT_PyT_donor	x	Donors	FVT_PyT_donor	FVT_PyT_donor	FVT_PyT_donor	FVT_PyT_donor	FVT_PyT_donor	FVT_PyT_donor
+NXT075Mao288	360	FVT_SDT_donor	x	Donors	FVT_SDT_donor	FVT_SDT_donor	FVT_SDT_donor	FVT_SDT_donor	FVT_SDT_donor	FVT_SDT_donor
+NXT075Mao285	324	SM_Buffer_sham	x	Donors	SM_Buffer_sham	SM_Buffer_sham	SM_Buffer_sham	SM_Buffer_sham	SM_Buffer_sham	SM_Buffer_sham
+NXT075Mao286	336	Unmodified_FVT_donor	x	Donors	Unmodified_FVT_donor	Unmodified_FVT_donor	Unmodified_FVT_donor	Unmodified_FVT_donor	Unmodified_FVT_donor	Unmodified_FVT_donor
+NXT075Mao175	216	SafeVir f4_17	x	Remove	17	Taconic	HFD	FVT_SDT	Male	Remove
+NXT075Mao159	285	SafeVir f4_1	x	Termination	1	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao160	213	SafeVir f4_2	x	Termination	2	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao161	226	SafeVir f4_3	x	Termination	3	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao162	201	SafeVir f4_4	x	Termination	4	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao163	237	SafeVir f4_5	x	Termination	5	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao164	249	SafeVir f4_6	x	Termination	6	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao165	225	SafeVir f4_7	x	Termination	7	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao166	261	SafeVir f4_8	x	Termination	8	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao167	250	SafeVir f4_9	x	Termination	9	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao168	263	SafeVir f4_10	x	Termination	10	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao169	275	SafeVir f4_11	x	Termination	11	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao170	252	SafeVir f4_12	x	Termination	12	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao171	273	SafeVir f4_13	x	Termination	13	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao172	202	SafeVir f4_14	x	Termination	14	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao173	214	SafeVir f4_15	x	Termination	15	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao174	239	SafeVir f4_16	x	Termination	16	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao176	240	SafeVir f4_18	x	Termination	18	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao177	264	SafeVir f4_19	x	Termination	19	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao178	107	SafeVir f4_20	x	Termination	20	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao179	262	SafeVir f4_21	x	Termination	21	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao180	286	SafeVir f4_22	x	Termination	22	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao181	274	SafeVir f4_23	x	Termination	23	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao182	251	SafeVir f4_24	x	Termination	24	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao183	238	SafeVir f4_25	x	Termination	25	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao184	215	SafeVir f4_26	x	Termination	26	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao185	178	SafeVir f4_27	x	Termination	27	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao186	119	SafeVir f4_28	x	Termination	28	Taconic	HFD	FVT_ChP	Male	Response
+NXT075Mao187	120	SafeVir f4_29	x	Termination	29	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao188	203	SafeVir f4_30	x	Termination	30	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao189	190	SafeVir f4_31	x	Termination	31	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao190	228	SafeVir f4_32	x	Termination	32	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao191	204	SafeVir f4_33	x	Termination	33	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao266	132	SafeVir f4_34	x	Termination	34	Taconic	HFD	FVT_ChP	Male	Non_Response
+NXT075Mao267	287	SafeVir f4_35	x	Termination	35	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao268	108	SafeVir f4_36	x	Termination	36	Taconic	HFD	FVT_SDT	Male	Non_Response
+NXT075Mao269	97	SafeVir f4_37	x	Termination	37	Taconic	HFD	FVT_PyT	Male	Response
+NXT075Mao270	227	SafeVir f4_38	x	Termination	38	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao271	109	SafeVir f4_39	x	Termination	39	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao272	121	SafeVir f4_40	x	Termination	40	Taconic	HFD	Obese_control	Male	Non_Response
+NXT075Mao273	166	SafeVir f4_41	x	Termination	41	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao274	179	SafeVir f4_42	x	Termination	42	Taconic	HFD	FVT_PyT	Male	Non_Response
+NXT075Mao275	167	SafeVir f4_43	x	Termination	43	Taconic	LFD	Lean_control	Male	Response
+NXT075Mao276	131	SafeVir f4_44	x	Termination	44	Taconic	HFD	Unmodified_FVT	Male	Response
+NXT075Mao277	155	SafeVir f4_45	x	Termination	45	Taconic	HFD	Obese_control	Male	Response
+NXT075Mao278	143	SafeVir f4_46	x	Termination	46	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao279	144	SafeVir f4_47	x	Termination	47	Taconic	HFD	Unmodified_FVT	Male	Non_Response
+NXT075Mao280	191	SafeVir f4_48	x	Termination	48	Taconic	HFD	FVT_PyT	Male	Non_Response

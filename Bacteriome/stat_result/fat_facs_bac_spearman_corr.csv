@@ -1,0 +1,36 @@
+"","from","to","r","p","linecolor","linesize"
+"1","g _Lactobacillus","fat_Dendritic_cells",0.628685770825983,0.00000634616091632716,"positive",0.628685770825983
+"2","f_Enterobacteriaceae","fat_Dendritic_cells",-0.327707932426708,0.0319342217448295,"negative",0.327707932426708
+"3","g _Oscillospira","fat_Dendritic_cells",-0.558991203630165,0.0000977134703655172,"negative",0.558991203630165
+"4","g _Bacteroides","fat_Dendritic_cells",-0.369615283232427,0.0147122506426157,"negative",0.369615283232427
+"5","f_Enterobacteriaceae","fat_Macrophages",0.346270009060707,0.0229292485090521,"positive",0.346270009060707
+"6","f_Lachnospiraceae","fat_Macrophages",0.309272123225612,0.0435862086044498,"positive",0.309272123225612
+"7","g _Lactobacillus","fat_M1_macrophages",0.540869105984448,0.000180682382723433,"positive",0.540869105984448
+"8","f_Enterobacteriaceae","fat_M1_macrophages",-0.340846453219852,0.0253082181474038,"negative",0.340846453219852
+"9","g _Oscillospira","fat_M1_macrophages",-0.651262884142938,0.00000225309481957655,"negative",0.651262884142938
+"10","Akkermansia muciniphila","fat_M1_macrophages",-0.386302714814524,0.0105065821064648,"negative",0.386302714814524
+"11","g _Bacteroides","fat_M1_macrophages",-0.438856797987102,0.00324070466580638,"negative",0.438856797987102
+"12","g _Lactobacillus","fat_B_cells",0.332225913621262,0.0295106350750025,"positive",0.332225913621262
+"13","f_Enterobacteriaceae","fat_B_cells",-0.322410147991543,0.0349829789189815,"negative",0.322410147991543
+"14","g _Oscillospira","fat_B_cells",-0.364995469646632,0.0161023796043534,"negative",0.364995469646632
+"15","g _Bacteroides","fat_B_cells",-0.353065539112051,0.0202151621936102,"negative",0.353065539112051
+"16","g _Lactobacillus","fat_Cytotoxic_T_cells",0.408711282546185,0.00587865698784683,"positive",0.408711282546185
+"17","f_Enterobacteriaceae","fat_Cytotoxic_T_cells",-0.356485888449492,0.0175391520684037,"negative",0.356485888449492
+"18","g _Oscillospira","fat_Cytotoxic_T_cells",-0.416675478946895,0.0048997214082273,"negative",0.416675478946895
+"19","f_Ruminococcaceae","fat_Cytotoxic_T_cells",-0.322655673650014,0.0326680285667762,"negative",0.322655673650014
+"20","Akkermansia muciniphila","fat_Cytotoxic_T_cells",-0.315114354934298,0.0372087598746845,"negative",0.315114354934298
+"21","g _Bacteroides","fat_Cytotoxic_T_cells",-0.56799521056039,0.0000578247357395138,"negative",0.56799521056039
+"22","g _Allobaculum","fat_Th_cells",0.361562976160561,0.0158869303026859,"positive",0.361562976160561
+"23","f_Clostridiaceae","fat_Th_cells",0.311216040222813,0.0397516529704465,"positive",0.311216040222813
+"24","g _Bacteroides","fat_Th_cells",-0.377955530732551,0.0114224584786207,"negative",0.377955530732551
+"25","g _Lactobacillus","fat_Central_memory_T_cells_CD8",0.51937984496124,0.000303016917831006,"positive",0.51937984496124
+"26","Mucispirillum schaedleri","fat_Central_memory_T_cells_CD8",-0.332205778717407,0.0275837519426004,"negative",0.332205778717407
+"27","g _Oscillospira","fat_Central_memory_T_cells_CD8",-0.589570119802678,0.0000254184001050625,"negative",0.589570119802678
+"28","Akkermansia muciniphila","fat_Central_memory_T_cells_CD8",-0.407610993657505,0.00602643512812523,"negative",0.407610993657505
+"29","g _Lactococcus","fat_Naive_T_cells_CD8",-0.305990133897111,0.0433817192387786,"negative",0.305990133897111
+"30","f_Erysipelotrichaceae","fat_Naive_T_cells_CD8",-0.364904862579281,0.0148729672824527,"negative",0.364904862579281
+"31","Akkermansia muciniphila","fat_Naive_T_cells_CD8",0.365045806906272,0.0148314398095374,"positive",0.365045806906272
+"32","f_Lachnospiraceae","fat_Central_memory_T_cells_CD4",-0.3092318534179,0.0410995134563978,"negative",0.3092318534179
+"33","g _Oscillospira","fat_Central_memory_T_cells_CD4",0.301620859760395,0.0466198971606964,"positive",0.301620859760395
+"34","f_Lachnospiraceae","fat_Effector_memory_T_cells_CD4",0.359408033826638,0.0165713457628828,"positive",0.359408033826638
+"35","f_Lachnospiraceae","fat_Naive_T_cells_CD4",-0.372374911909796,0.0128034810163313,"negative",0.372374911909796

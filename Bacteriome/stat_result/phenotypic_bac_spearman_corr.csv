@@ -1,0 +1,25 @@
+Column1,from,to,r,p,linecolor,linesize,,Column1,from,to,r,p,linecolor,linesize
+1,g _Lactococcus,ewat_mg,0.678153277,1.62982E-07,positive,0.678153277,,22,g _Allobaculum,AUC1_w18,-0.466966148,0.001395921,negative,0.466966148
+6,f_Clostridiaceae,ewat_mg,-0.621028592,3.19935E-06,negative,0.621028592,,20,g _Lactococcus,AUC1_w18,0.410205812,0.005682975,positive,0.410205812
+15,g _Lactobacillus,Cumulative_score,0.516854333,0.000199539,positive,0.516854333,,18,Akkermansia muciniphila,Cumulative_score,-0.434382727,0.002282187,negative,0.434382727
+19,g _Bacteroides,Cumulative_score,-0.513102873,0.000226032,negative,0.513102873,,19,g _Bacteroides,Cumulative_score,-0.513102873,0.000226032,negative,0.513102873
+22,g _Allobaculum,AUC1_w18,-0.466966148,0.001395921,negative,0.466966148,,15,g _Lactobacillus,Cumulative_score,0.516854333,0.000199539,positive,0.516854333
+4,g _Allobaculum,ewat_mg,-0.464410875,0.001007494,negative,0.464410875,,17,g _Oscillospira,Cumulative_score,-0.418529784,0.003414371,negative,0.418529784
+18,Akkermansia muciniphila,Cumulative_score,-0.434382727,0.002282187,negative,0.434382727,,6,f_Clostridiaceae,ewat_mg,-0.621028592,3.19935E-06,negative,0.621028592
+17,g _Oscillospira,Cumulative_score,-0.418529784,0.003414371,negative,0.418529784,,9,f_Muribaculaceae,ewat_mg,-0.415599434,0.00367072,negative,0.415599434
+9,f_Muribaculaceae,ewat_mg,-0.415599434,0.00367072,negative,0.415599434,,4,g _Allobaculum,ewat_mg,-0.464410875,0.001007494,negative,0.464410875
+14,Akkermansia muciniphila,Weight_gain_perc,-0.414084181,0.003809789,negative,0.414084181,,1,g _Lactococcus,ewat_mg,0.678153277,1.62982E-07,positive,0.678153277
+20,g _Lactococcus,AUC1_w18,0.410205812,0.005682975,positive,0.410205812,,14,Akkermansia muciniphila,Weight_gain_perc,-0.414084181,0.003809789,negative,0.414084181
+2,f_Erysipelotrichaceae,ewat_mg,0.397849152,0.005615801,positive,0.397849152,,,,,,,,
+10,g _Lactobacillus,Weight_gain_perc,0.392229417,0.006395243,positive,0.392229417,,,,,,,,
+3,f_Enterobacteriaceae,ewat_mg,0.391373479,0.006521853,positive,0.391373479,,,,,,,,
+12,g _Allobaculum,Weight_gain_perc,-0.361324307,0.012583235,negative,0.361324307,,,,,,,,
+8,Akkermansia muciniphila,ewat_mg,-0.357260559,0.01369126,negative,0.357260559,,,,,,,,
+24,Akkermansia muciniphila,AUC1_w18,-0.349873136,0.019906736,negative,0.349873136,,,,,,,,
+21,f_Erysipelotrichaceae,AUC1_w18,0.345785174,0.021500667,positive,0.345785174,,,,,,,,
+13,g _Oscillospira,Weight_gain_perc,-0.330712303,0.023177116,negative,0.330712303,,,,,,,,
+23,f_Clostridiaceae,AUC1_w18,-0.326755007,0.030398203,negative,0.326755007,,,,,,,,
+11,Mucispirillum schaedleri,Weight_gain_perc,-0.326665125,0.025021313,negative,0.326665125,,,,,,,,
+16,f_Enterobacteriaceae,Cumulative_score,-0.293702989,0.045097956,negative,0.293702989,,,,,,,,
+7,f_Ruminococcaceae,ewat_mg,0.292735105,0.045843603,positive,0.292735105,,,,,,,,
+5,g _Oscillospira,ewat_mg,0.291000549,0.047204972,positive,0.291000549,,,,,,,,
