@@ -1,0 +1,124 @@
+---
+title: "SafeVir_DIO_merged_figures alpha + beta"
+output:
+  pdf_document: default
+  html_document:
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=F}
+#Set working directory to script directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#Load and prepare OTU-tables + color scale etc.
+source("Analysis0_file_loading_and_prep.R")
+```
+
+# Alpha diversity
+
+## By Treatment
+
+```{r, eval = T, include = T, echo = F, message = F, warning=FALSE}
+
+#Normalize to mean read count
+standf = function(x, t=total) round(t * (x / sum(x)))
+total = median(sample_sums(PSB))
+PSB.R = transform_sample_counts(PSB, standf)
+
+#Set desired alpha diversity metrics
+
+alpha_met <- c("Shannon")
+
+
+
+###########Boxplots
+
+##Time
+
+variable <- c("Treatment")
+#Set sign argumetns
+#symnum.args <- list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns"))
+#my_comparisons = list( c("CP_CV", "CP_FVT"), c("CP_CV", "LGG_FVT"), c("CP_CV", "AM_FVT"), c("CP_CV", "LGG_CV"), c("CP_CV", "AM_CV"), c("AM_FVT", "AM_CV"), c("LGG_FVT", "LGG_CV") ) #All comparisons
+
+
+alpha.Treatment <- plot_richness(PSB.R, measures=alpha_met , x=variable, color=variable) + 
+  geom_boxplot(alpha=0.1, lwd = 1) +
+  #stat_compare_means(comparisons = my_comparisons, method = "kruskal", paired = FALSE, symnum.args = symnum.args) +
+  scale_color_jco() +
+  theme_classic() +
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 10, angle = 0, face="bold"),
+        legend.text = element_text(size = 8),
+        legend.position = "none"
+  ) +
+  labs(x="Treatment",
+       y="Alpha diversity")+
+  facet_wrap("Sample_time_point")
+
+alpha.Treatment
+```
+
+# Beta diversity
+
+## Treatment
+
+```{r, eval = T, include = T, echo = F, message = F}
+#Do PCoA ordination based on Bray-curtis distance
+GP.ord <- ordinate(subset_samples(PSB.CSS,Treatment != "NA"), "PCoA", "bray")
+
+beta.treatment = phyloseq::plot_ordination(subset_samples(PSB.CSS,Treatment != "NA"), GP.ord, color="Treatment") + 
+  stat_ellipse(geom = "polygon", level = 0.95, fill = NA, size = 1) +
+  scale_color_jco() +
+  theme_classic() + 
+  theme(plot.title = element_text(size = 12, face = "bold",hjust = 0.5),
+        strip.background = element_blank(),
+        legend.position = "right",
+        strip.text.x = element_text(size = 10, angle = 0, face="bold"),
+  ) + 
+  #geom_point(aes(shape = C.section..Yes.No.), size = 3) +
+  scale_x_reverse() +# Revert x-axis to match plots
+  #ggtitle("Time point")+
+  facet_wrap("Sample_time_point")
+#ggplot2::annotate("text", x = -0.3, y = 0.3, label = "P < 0.001") #Add p-value from adonis
+
+beta.treatment
+```
+```
+# Abundance heatmaps
+## Bacteria  - Treatment
+
+```{r, eval = T, include = T, echo = F, message = F, warning =  F, fig.width=10, fig.height=4, fig.fullwidth = TRUE}
+#Load phyloseq files to ampvis2 format
+
+PSBamp <- phyloseq_to_ampvis2(PSB)  
+
+#Bacteriome
+
+amp_heatmap(PSBamp,
+            group_by = "Treatment",
+            facet_by = "Sample_time_point",
+            plot_values = FALSE,
+            tax_show = 20,
+            tax_aggregate = "Genus" ,
+            #tax_add = "Family",
+            tax_empty = "best",
+            normalise = TRUE,
+            color_vector = c("white", "red"),
+            plot_colorscale = "sqrt",
+            plot_legendbreaks = c(1, 10, 25, 50)
+) +
+  theme_classic() +
+  theme(strip.background = element_rect(colour = "black", fill = "white"),
+        strip.text.x = element_text(face = "bold"),
+        axis.text.x=element_text(angle = -45, hjust = 0,vjust = 0.2))
+```
+

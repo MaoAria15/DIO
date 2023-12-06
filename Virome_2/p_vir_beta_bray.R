@@ -44,6 +44,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -51,6 +52,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -59,10 +61,11 @@ p_treatment.adj <- round(p.adjust(p_treatment, method = "fdr"),digits=3)
 
 p_treatment.adj <- c("_",p_treatment.adj)
 t_arrival <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
-                        Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
-                        R2= round(r,digits = 3),
-                        p=round(p,digits = 3),
-                        p.adj=p_treatment.adj)
+                         Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
+                         R2= round(r,digits = 3),
+                         F=round(f,digits = 3),
+                         p=round(p,digits = 3),
+                         p.adj=p_treatment.adj)
 
 
 
@@ -125,6 +128,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -132,6 +136,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -140,10 +145,11 @@ p_treatment.adj <- round(p.adjust(p_treatment, method = "fdr"),digits=3)
 
 p_treatment.adj <- c("_",p_treatment.adj)
 t_afterfvt <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
-                         Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
-                         R2= round(r,digits = 3),
-                         p=round(p,digits = 3),
-                         p.adj=p_treatment.adj)
+                            Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
+                            R2= round(r,digits = 3),
+                            F=round(f,digits = 3),
+                            p=round(p,digits = 3),
+                            p.adj=p_treatment.adj)
 
 
 
@@ -205,6 +211,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -212,6 +219,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -222,6 +230,7 @@ p_treatment.adj <- c("_",p_treatment.adj)
 t_termination <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
                             Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
                             R2= round(r,digits = 3),
+                            F=round(f,digits = 3),
                             p=round(p,digits = 3),
                             p.adj=p_treatment.adj)
 

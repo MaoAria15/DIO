@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" modified="2023-12-04T21:04:03.363Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="c-pHHT8ptNOM-pxMqAi3" version="22.1.5" type="onedrive">
+  <diagram name="Page-1" id="85F477fPnPL1kLFHMktX">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s2wIX3QWbBAQ9aQptjzh-1" target="s2wIX3QWbBAQ9aQptjzh-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="480" />
+              <mxPoint x="308" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s2wIX3QWbBAQ9aQptjzh-1" target="s2wIX3QWbBAQ9aQptjzh-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="480" />
+              <mxPoint x="658" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Mice enrolled in study&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;48 male mice&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4 time points&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Arrival&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Before 1&lt;/span&gt;&lt;sup style=&quot;background-color: initial;&quot;&gt;st&lt;/sup&gt;&lt;span style=&quot;background-color: initial;&quot;&gt; FVT&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1 week after the 2&lt;sup&gt;nd&lt;/sup&gt; FVT&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;T&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ermination&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s2wIX3QWbBAQ9aQptjzh-3" target="s2wIX3QWbBAQ9aQptjzh-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-3" value="&lt;b&gt;&lt;font face=&quot;Arial&quot;&gt;Eligible for bacteriome analysis&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;4 time points:&lt;/li&gt;&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Arrival: 48&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Before 1&lt;/span&gt;&lt;sup style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;st&lt;/sup&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&amp;nbsp;FVT: 48&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;1 week after the 2nd FVT: 42&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;T&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;ermination: 48&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="550" width="256" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-7" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Excluded due to no sample&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Arrival:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;FVT-ChP: 1&lt;/li&gt;&lt;li&gt;FVT-PyT: 1&lt;/li&gt;&lt;li&gt;Unmodified-FVT: 3&lt;/li&gt;&lt;li&gt;Obese-contro: 1&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="680" y="300" width="236.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-12" value="&lt;b&gt;&lt;font face=&quot;Arial&quot;&gt;Eligible for virome analysis&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4 time points:&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Arrival: 48&amp;nbsp;&lt;/span&gt;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1 week after the 2nd FVT: 42&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;T&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;ermination: 48&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="550" width="256" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-15" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Excluded due to low reads&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Arrival:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;FVT-ChP: 2&lt;/li&gt;&lt;li&gt;Unmodified-FVT: 1&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;1 week after 2&lt;sup&gt;nd&lt;/sup&gt; FVT:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Obese-control: 1&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Termination:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;FVT-SDT: 1&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="680" width="236.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-17" value="&lt;b&gt;&lt;font face=&quot;Arial&quot;&gt;Included after preprocessing&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4 time points:&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Arrival: 45&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;Before 1&lt;/span&gt;&lt;sup style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;st&lt;/sup&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;&amp;nbsp;FVT: 48&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1 week after the 2nd FVT: 41&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;T&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;ermination: 47&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="850" width="256" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-21" value="&lt;b&gt;&lt;font face=&quot;Arial&quot;&gt;Included after preprocessing&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3 time points:&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Arrival: 48&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1 week after the 2nd FVT: 42&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;T&lt;/span&gt;&lt;span style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;ermination: 48&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="850" width="256" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.998;entryY=0.544;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="s2wIX3QWbBAQ9aQptjzh-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="767" as="sourcePoint" />
+            <mxPoint x="500" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.004;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="s2wIX3QWbBAQ9aQptjzh-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2wIX3QWbBAQ9aQptjzh-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.46;entryY=-0.021;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="s2wIX3QWbBAQ9aQptjzh-12" target="s2wIX3QWbBAQ9aQptjzh-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

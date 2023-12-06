@@ -1,0 +1,601 @@
+---
+title: "Abundance_single_Genus"
+author: "XiaotianMao"
+date: "2023-03-08"
+output: html_document
+---
+
+
+
+You can also embed plots, for example:
+##df_Allobaculum
+```{r pressure, echo=FALSE}
+
+df_Allobaculum$Treatment <- factor(df_Allobaculum$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+
+df_Allobaculum$Abundance <- df_Allobaculum$Abundance*100
+
+bxp1 <- ggplot(df_Allobaculum,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+# stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Allobaculum") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Allobaculum$Treatment <- fct_relevel(df_Allobaculum$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Allobaculum)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Allobaculum$Treatment <- fct_relevel(df_Allobaculum$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Allobaculum)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Allobaculum$Treatment <- fct_relevel(df_Allobaculum$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Allobaculum)
+summary(fit_norm)
+```
+
+
+
+##df_Bacteroides
+```{r pressure, echo=FALSE}
+
+df_Bacteroides$Treatment <- factor(df_Bacteroides$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Bacteroides$Abundance <- df_Bacteroides$Abundance*100
+
+
+bxp2 <- ggplot(df_Bacteroides,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Bacteroides") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Bacteroides$Treatment <- fct_relevel(df_Bacteroides$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Bacteroides)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Bacteroides$Treatment <- fct_relevel(df_Bacteroides$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Bacteroides)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Bacteroides$Treatment <- fct_relevel(df_Bacteroides$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Bacteroides)
+summary(fit_norm)
+```
+
+
+
+##df_Bifidobacterium
+```{r pressure, echo=FALSE}
+
+df_Bifidobacterium$Treatment <- factor(df_Bifidobacterium$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Bifidobacterium$Abundance <- df_Bifidobacterium$Abundance*100
+
+
+bxp3 <- ggplot(df_Bifidobacterium,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Bifidobacterium") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Bifidobacterium$Treatment <- fct_relevel(df_Bifidobacterium$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Bifidobacterium)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Bifidobacterium$Treatment <- fct_relevel(df_Bifidobacterium$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_bac)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Bifidobacterium$Treatment <- fct_relevel(df_Bifidobacterium$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Bifidobacterium)
+summary(fit_norm)
+```
+
+
+##df_Clostridium
+```{r pressure, echo=FALSE}
+
+df_Clostridium$Treatment <- factor(df_Clostridium$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Clostridium$Abundance <- df_Clostridium$Abundance*100
+
+
+
+bxp4 <- ggplot(df_Clostridium,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Clostridium") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Clostridium$Treatment <- fct_relevel(df_Clostridium$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Clostridium)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Clostridium$Treatment <- fct_relevel(df_Clostridium$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Clostridium)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Clostridium$Treatment <- fct_relevel(df_Clostridium$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Clostridium)
+summary(fit_norm)
+```
+
+
+
+##df_Dehalobacterium
+```{r pressure, echo=FALSE}
+
+df_Dehalobacterium$Treatment <- factor(df_Dehalobacterium$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Dehalobacterium$Abundance <- df_Dehalobacterium$Abundance*100
+
+
+bxp5 <- ggplot(df_Dehalobacterium,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Dehalobacterium") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Dehalobacterium$Treatment <- fct_relevel(df_Dehalobacterium$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Dehalobacterium)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Dehalobacterium$Treatment <- fct_relevel(df_Dehalobacterium$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Dehalobacterium)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Dehalobacterium$Treatment <- fct_relevel(df_Dehalobacterium$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Dehalobacterium)
+summary(fit_norm)
+```
+
+## Lactobacillus
+```{r pressure, echo=FALSE}
+
+df_Lactobacillus$Treatment <- factor(df_Lactobacillus$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Lactobacillus$Abundance <- df_Lactobacillus$Abundance*100
+
+
+bxp6 <- ggplot(df_Lactobacillus,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+ stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Lactobacillus") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Lactobacillus$Treatment <- fct_relevel(df_Lactobacillus$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Lactobacillus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Lactobacillus$Treatment <- fct_relevel(df_Lactobacillus$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Lactobacillus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Lactobacillus$Treatment <- fct_relevel(df_Lactobacillus$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Lactobacillus)
+summary(fit_norm)
+```
+
+
+
+##Lactococcus
+
+```{r pressure, echo=FALSE}
+
+df_Lactococcus$Treatment <- factor(df_Lactococcus$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Lactococcus$Abundance <- df_Lactococcus$Abundance*100
+
+
+bxp7 <- ggplot(df_Lactococcus,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Lactococcus") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Lactococcus$Treatment <- fct_relevel(df_Lactococcus$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Lactococcus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Lactococcus$Treatment <- fct_relevel(df_Lactococcus$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Lactococcus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Lactococcus$Treatment <- fct_relevel(df_Lactococcus$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Lactococcus)
+summary(fit_norm)
+```
+
+
+
+
+
+
+##Oscillospira
+```{r pressure, echo=FALSE}
+
+df_Oscillospira$Treatment <- factor(df_Oscillospira$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Oscillospira$Abundance <- df_Oscillospira$Abundance*100
+
+
+
+bxp8 <- ggplot(df_Oscillospira,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Oscillospira") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Oscillospira$Treatment <- fct_relevel(df_Oscillospira$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_bac)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Oscillospira$Treatment <- fct_relevel(df_Oscillospira$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Oscillospira)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Oscillospira$Treatment <- fct_relevel(df_Oscillospira$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Oscillospira)
+summary(fit_norm)
+```
+
+
+##*Ruminococcus
+```{r pressure, echo=FALSE}
+
+df_Ruminococcus$Treatment <- factor(df_Ruminococcus$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Ruminococcus$Abundance <- df_Ruminococcus$Abundance*100
+
+
+bxp9 <- ggplot(df_Ruminococcus,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 45, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Ruminococcus") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Ruminococcus$Treatment <- fct_relevel(df_Ruminococcus$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Ruminococcus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Ruminococcus$Treatment <- fct_relevel(df_Ruminococcus$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Ruminococcus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Ruminococcus$Treatment <- fct_relevel(df_Ruminococcus$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Ruminococcus)
+summary(fit_norm)
+```
+
+## *df_Mucispirillum
+```{r pressure, echo=FALSE}
+
+df_Mucispirillum$Treatment <- factor(df_Mucispirillum$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Mucispirillum$Abundance <- df_Mucispirillum$Abundance*100
+
+bxp7 <- ggplot(df_Mucispirillum,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 90, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT_ChP", "FVT_SDT", "FVT_PyT","FVT_UnT","HFD_control","LFD_control")
+                  )+
+  ggtitle("Mucispirillum ") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+bxp10
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Mucispirillum$Treatment <- fct_relevel(df_Mucispirillum$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Mucispirillum)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Mucispirillum$Treatment <- fct_relevel(df_Mucispirillum$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Mucispirillum)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Mucispirillum$Treatment <- fct_relevel(df_Mucispirillum$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Mucispirillum)
+summary(fit_norm)
+```
+
+## *df_Staphylococcus
+```{r pressure, echo=FALSE}
+
+df_Staphylococcus$Treatment <- factor(df_Staphylococcus$Treatment, levels = c("FVT_ChP", "FVT_SDT", "FVT_PyT", "FVT_UnT", "HFD_control", "LFD_control"))
+df_Staphylococcus$Abundance <- df_Staphylococcus$Abundance*100
+
+
+bxp10 <- ggplot(df_Staphylococcus,aes(x=Treatment,y=Abundance)) +
+geom_boxplot(aes(fill=Treatment)) +
+stat_boxplot(geom = "errorbar", width = 0.15) +
+# stat_summary(fun.y = mean, geom="point",colour="Black", size=3) +
+  # geom_text(data = means, aes(label = Ratio, y = Ratio + 0.08))+
+stat_summary(fun.data = means, geom="text", vjust=-0.7)+
+  theme(text = element_text(size = 8),
+        axis.line=element_line(size=1),
+        axis.text=element_text(size = 8, colour = "Black"),
+        axis.ticks=element_line(size=1, colour = "Black"),
+        panel.background = element_rect(fill='white'),
+        plot.background = element_rect(fill='white', color=NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        axis.text.x=element_text(angle = 90, hjust = 1),
+        strip.text.x = element_text(size = 8, angle = 0),
+        legend.text = element_text(size = 8)
+  ) +
+  scale_fill_manual(values=c("#F27970","#BB9727","#54B345","#32B897","#05B9E2","#8983BF"),
+                    breaks = c( "FVT_ChP", "FVT_SDT","FVT_PyT","FVT_UnT","HFD_control","LFD_control"),
+                    labels = c( "FVT-ChP", "FVT-SDT", "FVT-PyT","FVT-UnT","HFD-control","LFD-control")
+                  )+
+  ggtitle("Staphylococcus") +
+    xlab("")+
+    ylab("Mean Relative Abundance (%)")
+```
+
+
+```{r}
+#Effect of FVT on Lactococcus abundance
+df_Staphylococcus$Treatment <- fct_relevel(df_Staphylococcus$Treatment, "LFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Staphylococcus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Staphylococcus$Treatment <- fct_relevel(df_Staphylococcus$Treatment, "HFD_control") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Staphylococcus)
+summary(fit_norm)
+
+#Effect of FVT on Lactococcus abundance
+df_Staphylococcus$Treatment <- fct_relevel(df_Staphylococcus$Treatment, "FVT_UnT") #Releveling to control 
+fit_norm <- lm(Abundance ~Treatment, data = df_Staphylococcus)
+summary(fit_norm)
+```
+
+
+
+
+```{r}
+Fig1 <- ggarrange(bxp1, bxp2, bxp3, bxp4, bxp5, bxp6, bxp7,bxp8,
+                  labels = c("A", "B", "C", "D", "E", "F","G","H"),
+                  ncol = 4, nrow = 2,
+                  common.legend = TRUE,
+                  font.label = list(size = 10))
+Fig1
+ggsave("Mao_output_file/Abundance_Desq7.pdf")
+```
+

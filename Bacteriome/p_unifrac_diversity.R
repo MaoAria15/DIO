@@ -45,6 +45,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -52,6 +53,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -62,6 +64,7 @@ p_treatment.adj <- c("_",p_treatment.adj)
 t_arrival <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
                         Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
                         R2= round(r,digits = 3),
+                        F=round(f,digits = 3),
                         p=round(p,digits = 3),
                         p.adj=p_treatment.adj)
 
@@ -124,6 +127,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -131,6 +135,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -141,9 +146,9 @@ p_treatment.adj <- c("_",p_treatment.adj)
 t_beforefvt <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
                         Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
                         R2= round(r,digits = 3),
+                        F=round(f,digits = 3),
                         p=round(p,digits = 3),
                         p.adj=p_treatment.adj)
-
 
 
 
@@ -205,6 +210,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -212,6 +218,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -222,6 +229,7 @@ p_treatment.adj <- c("_",p_treatment.adj)
 t_afterfvt <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
                         Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
                         R2= round(r,digits = 3),
+                        F=round(f,digits = 3),
                         p=round(p,digits = 3),
                         p.adj=p_treatment.adj)
 
@@ -286,6 +294,7 @@ cbn <- cbn[,1:5]
 
 p <- c()
 r <- c()
+f <- c()
 for(i in 1:ncol(cbn)){
   ps.subs <- subset_samples(ps, Treatment %in% cbn[,i])
   metadata_sub <- data.frame(sample_data(ps.subs))
@@ -293,6 +302,7 @@ for(i in 1:ncol(cbn)){
                                 data = metadata_sub)
   p <- c(p, permanova_pairwise$`Pr(>F)`[1])
   r <- c(r, permanova_pairwise$R2[1])
+  f <- c(f, permanova_pairwise$F[1])
 }
 
 p_control <- p[1]
@@ -303,9 +313,9 @@ p_treatment.adj <- c("_",p_treatment.adj)
 t_termination <- data.frame(Group1=c( "Obese-control","Obese-control","Obese-control","Obese-control","Obese-control"),
                         Group2=c("Lean-control","FVT-SDT","FVT-ChP","Unmodified-FVT","FVT-PyT"),
                         R2= round(r,digits = 3),
+                        F=round(f,digits = 3),
                         p=round(p,digits = 3),
                         p.adj=p_treatment.adj)
-
 
 
 
@@ -360,14 +370,14 @@ p_unifac_stat_bac
 # 
 #  write_xlsx(sheets, "stat_result/unifac_permanova_all.xlsx")
 # 
-#  sheet2 <- list(
-#    "adonis_sub_arrival" =  t_arrival,
-#    "adonis_sub_beforefvt" = t_beforefvt,
-#    "adonis_sub_afterfvt" =  t_afterfvt,
-#    "adonis_sub_termination" = t_termination
-#  )
-# 
-#  write_xlsx(sheet2, "stat_result/unifac_permanova_pairs.xlsx")
+ # sheet2 <- list(
+ #   "adonis_sub_arrival" =  t_arrival,
+ #   "adonis_sub_beforefvt" = t_beforefvt,
+ #   "adonis_sub_afterfvt" =  t_afterfvt,
+ #   "adonis_sub_termination" = t_termination
+ # )
+ # 
+ # write_xlsx(sheet2, "Bacteriome/stat_result/unifac_permanova_pairs.xlsx")
 
 
 # all_variables <- ls()
